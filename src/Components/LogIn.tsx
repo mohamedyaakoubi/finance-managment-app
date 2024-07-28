@@ -61,7 +61,7 @@ export const LogIn = () => {
 				<input type="submit" />
 				<p>{fireError}</p>
 			</form>
-			<Link to="/sign-up">Dont have an account ?</Link>
+			<Link to="/signup">Dont have an account ?</Link>
 		</div>
 	);
 };

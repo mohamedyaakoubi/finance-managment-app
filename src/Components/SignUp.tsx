@@ -60,6 +60,7 @@ export const SignUp = () => {
 			.catch((err) => {
 				console.log(err.message);
 			});
+			navigate('/Dashboard');
 	};
 
 	return (
