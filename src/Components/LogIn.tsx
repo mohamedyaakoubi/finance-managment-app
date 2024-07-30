@@ -49,6 +49,7 @@ export const LogIn = () => {
 			.catch((err) => {
 				setFireError(err.message);
 			});
+			
 	};
 
 	return (

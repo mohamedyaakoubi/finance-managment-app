@@ -1,0 +1,17 @@
+/* About.css */
+.about-container {
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding around the content */
+    margin: 20px auto; /* Center the component horizontally with some margin */
+    max-width: 800px; /* Limit the maximum width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.about-container p {
+    font-family: 'Arial', sans-serif; /* Font style */
+    font-size: 16px; /* Font size */
+    line-height: 1.6; /* Line height for readability */
+    color: #333; /* Dark text color */
+    margin: 0; /* Remove default margin */
+}

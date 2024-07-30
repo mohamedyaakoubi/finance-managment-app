@@ -10,7 +10,6 @@ export const Home = () => {
             </h1>
 
             <button onClick={() => navigate('/login')}>Login</button>
-            <div>Don't have an account?</div>
             <button onClick={() => navigate('/signup')}>Signup</button>
         </div>
     );
