@@ -1,3 +1,4 @@
+import '../Styles/SignUp.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
@@ -58,18 +59,18 @@ export const SignUp = () => {
     };
 
     return (
-        <div>
-            <form onSubmit={handleSubmit(submitData)} className="myForm">
+        <div className="signup-container">
+            <form onSubmit={handleSubmit(submitData)} className="signup-form">
                 <input type="text" placeholder="Full name" {...register('name')} />
-                <p>{errors.name?.message}</p>
+                {errors.name && <p className="error-message">{errors.name.message}</p>}
                 <input type="text" placeholder="Email" {...register('email')} />
-                <p>{errors.email?.message}</p>
+                {errors.email && <p className="error-message">{errors.email.message}</p>}
                 <input type="password" placeholder="Password" {...register('pass')} />
-                <p>{errors.pass?.message}</p>
+                {errors.pass && <p className="error-message">{errors.pass.message}</p>}
                 <input type="submit" value="Sign Up" />
-                {errorMessage && <p>{errorMessage}</p>} {/* Display error message */}
+                {errorMessage && <p className="error-message">{errorMessage}</p>}
             </form>
-            <Link to="/login">Already have an account?</Link>
+            <Link to="/login" className="signin-link">Already have an account?</Link>
         </div>
     );
 };

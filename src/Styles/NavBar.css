@@ -1,0 +1,59 @@
+/* NavBar.css */
+nav {
+    display: flex;
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    padding: 10px;
+    background-color: #f8f9fa; /* Light background color */
+    border-bottom: 1px solid #dee2e6; /* Border at the bottom */
+}
+
+nav .nav-links {
+    display: flex;
+    gap: 15px; /* Space between links */
+}
+
+nav .nav-actions {
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-link,
+nav .nav-action {
+    text-decoration: none; /* Remove default underline */
+    color: #007bff; /* Link color */
+    padding: 8px 12px; /* Padding around the links */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+nav .nav-link:hover,
+nav .nav-action:hover {
+    background-color: #e9ecef; /* Light background on hover */
+    color: #0056b3; /* Darker text color on hover */
+}
+
+nav .nav-actions button,
+nav .nav-actions a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+nav .nav-actions button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px; /* Increased padding for buttons */
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+nav .nav-actions button:hover {
+    background-color: #0056b3; /* Darker button color on hover */
+}
+
+nav .nav-actions a:hover {
+    text-decoration: underline;
+}

@@ -1,3 +1,4 @@
+import '../Styles/DashBoard.css';
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { fetchExpenses } from '../services/api';
@@ -77,11 +78,11 @@ export const DashBoard = () => {
     };
 
     return (
-        <div>
+        <div className="dashboard-container">
             <h1>Dashboard</h1>
             <p>Balance: ${balance.toFixed(2)}</p>
 
-            <div>
+            <div className="add-expense-form">
                 <input 
                     type="text" 
                     value={newExpenseName} 
@@ -101,7 +102,7 @@ export const DashBoard = () => {
                 <button onClick={handleAddExpense}>Add Expense</button>
             </div>
 
-            <ul>
+            <ul className="expense-list">
                 {expenses.map(expense => (
                     <li key={expense.id}>
                         {expense.name} - ${expense.amount} ({expense.type})

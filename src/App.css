@@ -1,38 +1,27 @@
+/* App.css */
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh; /* Ensure the app takes up at least the full viewport height */
 }
 
-.App-link {
-  color: #61dafb;
+main {
+  flex: 1; /* Allow the main content to grow and take available space */
+  padding: 20px; /* Add padding for spacing around the content */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer {
+  background-color: #f8f9fa; /* Light grey background */
+  padding: 10px;
+  text-align: center;
+  border-top: 1px solid #dee2e6; /* Border at the top */
+  margin-top: auto; /* Push the footer to the bottom */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; /* Use a consistent font */
+  background-color: #f0f2f5; /* Light grey background for the body */
+  color: #333; /* Darker text color for readability */
 }

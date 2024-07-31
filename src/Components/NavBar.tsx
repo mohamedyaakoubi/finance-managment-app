@@ -23,20 +23,22 @@ export const NavBar = () => {
 
     return (
         <nav>
-            <Link to="/">Home</Link>
-            {isAuth ? (
-                <>
-                    <Link to="/dashboard">Dashboard</Link>
+            <div className="nav-links">
+                <Link className="nav-link" to="/">Home</Link>
+                {isAuth && <Link className="nav-link" to="/dashboard">Dashboard</Link>}
+                <Link className="nav-link" to="/about">About</Link>
+                <Link className="nav-link" to="/contact">Contact</Link>
+            </div>
+            <div className="nav-actions">
+                {isAuth ? (
                     <button onClick={handleLogout}>Log Out</button>
-                </>
-            ) : (
-                <>
-                    <Link to="/login">Log In</Link>
-                    <Link to="/signup">Sign Up</Link>
-                </>
-            )}
-            <Link to="/about">About</Link>
-            <Link to="/contact">Contact</Link>
+                ) : (
+                    <>
+                        <Link className="nav-action" to="/login">Log In</Link>
+                        <Link className="nav-action" to="/signup">Sign Up</Link>
+                    </>
+                )}
+            </div>
         </nav>
     );
 };

@@ -1,3 +1,4 @@
+import '../Styles/LogIn.css';
 import { useNavigate, Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
@@ -18,8 +19,8 @@ export const LogIn = () => {
 
     // Schema validation
     const loginSchema = yup.object().shape({
-        email: yup.string().email().required(),
-        pass: yup.string().min(6).required(),
+        email: yup.string().email().required('Email is required'),
+        pass: yup.string().min(6).required('Password is required'),
     });
 
     const { handleSubmit, register, formState: { errors } } = useForm<LoginData>({
@@ -59,16 +60,16 @@ export const LogIn = () => {
     };
 
     return (
-        <div>
-            <form onSubmit={handleSubmit(submitLogin)}>
+        <div className="login-container">
+            <form onSubmit={handleSubmit(submitLogin)} className="login-form">
                 <input type="text" placeholder="Email" {...register('email')} />
-                <p>{errors.email?.message}</p>
+                {errors.email && <p className="error-message">{errors.email.message}</p>}
                 <input type="password" placeholder="Password" {...register('pass')} />
-                <p>{errors.pass?.message}</p>
+                {errors.pass && <p className="error-message">{errors.pass.message}</p>}
                 <input type="submit" value="Log In" />
-                <p>{fireError}</p>
+                {fireError && <p className="error-message">{fireError}</p>}
             </form>
-            <Link to="/signup">Don't have an account?</Link>
+            <Link to="/signup" className="signup-link">Don't have an account?</Link>
         </div>
     );
 };

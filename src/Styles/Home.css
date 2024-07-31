@@ -1,0 +1,25 @@
+/* Home.css */
+
+.home-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f2f5; /* Light grey background */
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-heading {
+    font-size: 2.5rem;
+    color: #333; /* Darker grey for text */
+    margin-bottom: 20px;
+}
+
+.home-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Center image horizontally */
+}
