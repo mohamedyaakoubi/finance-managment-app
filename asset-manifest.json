@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/finance-managment-app/static/css/main.d65ee732.css",
+    "main.js": "/finance-managment-app/static/js/main.2706f306.js",
+    "static/js/453.e7818e8d.chunk.js": "/finance-managment-app/static/js/453.e7818e8d.chunk.js",
+    "index.html": "/finance-managment-app/index.html",
+    "main.d65ee732.css.map": "/finance-managment-app/static/css/main.d65ee732.css.map",
+    "main.2706f306.js.map": "/finance-managment-app/static/js/main.2706f306.js.map",
+    "453.e7818e8d.chunk.js.map": "/finance-managment-app/static/js/453.e7818e8d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d65ee732.css",
+    "static/js/main.2706f306.js"
+  ]
+}
