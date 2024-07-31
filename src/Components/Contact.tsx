@@ -5,7 +5,7 @@ import '../Styles/Contact.css'
 import { useForm, ValidationError } from '@formspree/react';
 
 function Contact() {
-  const [state, handleSubmit] = useForm("mjkbypgq");
+  const [state, handleSubmit] = useForm("mjkbypgq"); //visit formspree make an account and put your key here
   if (state.succeeded) {
       return <p>Thanks for joining!</p>;
   }
