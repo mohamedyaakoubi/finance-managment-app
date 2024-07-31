@@ -1,0 +1,56 @@
+/* Contact.css */
+
+.contact-container {
+    max-width: 600px; /* Maximum width for better readability */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Padding around the content */
+    background-color: #ffffff; /* White background for the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    gap: 15px; /* Space between form elements */
+}
+
+.contact-form label {
+    font-size: 1rem; /* Font size for labels */
+    color: #333; /* Dark text color for labels */
+    margin-bottom: 5px; /* Space below the label */
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px; /* Padding inside the input and textarea */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 1rem; /* Font size for input and textarea */
+    width: 100%; /* Full width */
+}
+
+.contact-form textarea {
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 100px; /* Minimum height for the textarea */
+}
+
+.contact-form button {
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #007bff; /* Primary button color */
+    color: #ffffff; /* Button text color */
+    font-size: 1rem; /* Font size for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.contact-form button:hover {
+    background-color: #0056b3; /* Darker button color on hover */
+}
+
+.contact-form button:disabled {
+    background-color: #cccccc; /* Grey color for disabled button */
+    cursor: not-allowed; /* Not-allowed cursor for disabled button */
+}

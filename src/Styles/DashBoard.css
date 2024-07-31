@@ -1,0 +1,100 @@
+/* DashBoard.css */
+
+/* Container for the dashboard */
+.dashboard-container {
+    max-width: 800px; /* Maximum width of the dashboard */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Padding around the content */
+    background-color: #ffffff; /* White background for the dashboard */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Title of the dashboard */
+.dashboard-container h1 {
+    font-size: 2rem; /* Font size for the title */
+    margin-bottom: 20px; /* Space below the title */
+    color: #333; /* Dark text color */
+}
+
+/* Balance display */
+.dashboard-container p {
+    font-size: 1.5rem; /* Font size for balance */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 20px; /* Space below balance */
+}
+
+/* Form for adding new expense */
+.add-expense-form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    gap: 10px; /* Space between form elements */
+    margin-bottom: 20px; /* Space below the form */
+}
+
+/* Style for input fields */
+.add-expense-form input[type="text"],
+.add-expense-form input[type="number"] {
+    padding: 10px; /* Padding inside the input fields */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 1rem; /* Font size for the input fields */
+    width: 100%; /* Full width of the input fields */
+}
+
+/* Style for select dropdown */
+.add-expense-form select {
+    padding: 10px; /* Padding inside the select dropdown */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 1rem; /* Font size for the dropdown */
+    width: 100%; /* Full width of the dropdown */
+}
+
+/* Style for the add expense button */
+.add-expense-form button {
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #28a745; /* Success color */
+    color: #ffffff; /* Button text color */
+    font-size: 1rem; /* Font size for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Style for the add expense button on hover */
+.add-expense-form button:hover {
+    background-color: #218838; /* Darker button color on hover */
+}
+
+/* Style for the expense list */
+.expense-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+/* Style for each expense item */
+.expense-list li {
+    padding: 10px; /* Padding inside each item */
+    border-bottom: 1px solid #ddd; /* Light border below each item */
+    display: flex; /* Flexbox layout for items */
+    justify-content: space-between; /* Space between text and button */
+    align-items: center; /* Align items vertically */
+}
+
+/* Style for delete button */
+.expense-list button {
+    background-color: #dc3545; /* Danger color */
+    color: #ffffff; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 5px 10px; /* Padding inside the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Style for delete button on hover */
+.expense-list button:hover {
+    background-color: #c82333; /* Darker button color on hover */
+}

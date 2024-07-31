@@ -1,0 +1,27 @@
+/* App.css */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the app takes up at least the full viewport height */
+}
+
+main {
+  flex: 1; /* Allow the main content to grow and take available space */
+  padding: 20px; /* Add padding for spacing around the content */
+}
+
+footer {
+  background-color: #f8f9fa; /* Light grey background */
+  padding: 10px;
+  text-align: center;
+  border-top: 1px solid #dee2e6; /* Border at the top */
+  margin-top: auto; /* Push the footer to the bottom */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; /* Use a consistent font */
+  background-color: #f0f2f5; /* Light grey background for the body */
+  color: #333; /* Darker text color for readability */
+}

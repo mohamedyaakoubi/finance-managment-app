@@ -1,0 +1,64 @@
+/* LogIn.css */
+
+/* Container for the login form */
+.login-container {
+    max-width: 400px; /* Maximum width of the form */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Padding around the content */
+    background-color: #ffffff; /* White background for the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Style for the form */
+.login-form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    gap: 15px; /* Space between form elements */
+}
+
+/* Style for input fields */
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    padding: 10px; /* Padding inside the input fields */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 1rem; /* Font size for the input fields */
+    width: 100%; /* Full width of the input fields */
+}
+
+/* Style for the submit button */
+.login-form input[type="submit"] {
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #007bff; /* Primary button color */
+    color: #ffffff; /* Button text color */
+    font-size: 1rem; /* Font size for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Style for the submit button on hover */
+.login-form input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker button color on hover */
+}
+
+/* Style for error messages */
+.error-message {
+    color: #ff0000; /* Red color for error messages */
+    font-size: 0.875rem; /* Slightly smaller font size for error messages */
+}
+
+/* Style for the sign up link */
+.signup-link {
+    display: block; /* Display as block element */
+    margin-top: 10px; /* Space above the link */
+    text-align: center; /* Center text */
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.signup-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
