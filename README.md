@@ -8,10 +8,10 @@ Record sources of income and outcome.
 ### Frontend:
 React, TypeScript, CSS
 ### Database:
-Firebase
+[Firebase](https://firebase.google.com/)
 ## Setup Instructions
 ### Prerequisites
-Node.js and npm installed
+[Node.js](https://nodejs.org/) and npm installed
 ### Firebase project and SDK setup
 ## Installation
 Clone the repository:
@@ -62,9 +62,9 @@ http://localhost:3000
 in your browser.
 
 ## Formspree Setup
-### To set up Formspree(https://formspree.io/) for handling form submissions:
+### To set up [Formspree](https://formspree.io/) for handling form submissions:
 
-Go to Formspree(https://formspree.io/) and sign up.
+Go to [Formspree](https://formspree.io/) and sign up.
 Create a new form and copy the Formspree endpoint in the contactconfig.js file.
 Use the endpoint in your React app to handle form submissions.
 
@@ -75,10 +75,10 @@ Add, edit, or delete expenses and income entries.
 Contributions are welcome! Please fork the repository and submit a pull request.
 
 ## License
-This project is licensed under the MIT License - see the LICENSE(https://opensource.org/licenses/MIT) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/licenses/MIT) file for details.
 
 ## Deployed Version
-The app is deployed and can be accessed here(https://mohamedyaakoubi.github.io/finance-managment-app/).
+The app is deployed and can be accessed [here](https://mohamedyaakoubi.github.io/finance-managment-app/).
 
 ____________________________________________________________________________________________________________________________________________________________________________________________________________________
 
